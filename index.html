@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <!-- main container of  app -->
+<div class="container">
+    <!-- left side container to hold qr code -->
+    <div class="leftDiv">
+        <div class="imgDiv">
+            <img src="Images/img.png" alt="QR Code Image" class="image">
+        </div>
+        <p class="label">Data in QR Code</p>
+        <p class="textEntered">Empty</p>
+        <a href="#"><button>Download</button></a>
+        <p class="len">Length : 0</p>
+    </div>
+    <!-- right side div for controls -->
+    <div class="rightDiv">
+        <!-- contains heading and text field -->
+        <div class="header">
+        <p id="heading"><i class="fa fa-qrcode" aria-hidden="true"></i> QR Code</p>
+        <textarea cols="30" rows="10" class="inputText" placeholder="Enter Text..." maxlength="150"></textarea>
+    </div>
+    <!-- options- color and size -->
+        <div class="options">
+        <span>
+        <p class="colorFgLabel">Foreground Color: </p>
+        <input type="color" id="colorChooserFG">
+        </span>
+        <span>
+            <p class="colorFgLabel">Background Color: </p>
+        <input type="color" id="colorChooserBG">
+        </span>
+        <span>
+        <p class="size">Size: </p>
+        <select id="menu">
+            <option value="150">150x150 px</option>
+            <option value="250">250x250 px</option>
+            <option value="350">350x350 px</option>
+            <option value="450">450x450 px</option>
+            <option value="650">650x650 px</option>
+        </select>
+    </span>
+    </div>
+    <!-- btn controls -->
+    <div class="btnDiv">
+        <button>Generate</button>
+        <p class="bottom">©All rights reserved 2021.</p>
+    </div>
+    </div>
+</div>
+<!-- notification  -->
+<p class="toast">Successfully Generated</p>
+    <script src="main.js"></script>
+</body>
+</html>
