@@ -1,0 +1,23 @@
+var btn = document.querySelector('.btnDiv button');
+var data = document.querySelector(".textEntered");
+var len = document.querySelector(".len");
+btn.addEventListener("click",()=> {
+    var text = document.querySelector('.inputText').value;
+    var datalen = text.length;
+    var image = document.querySelector('.image');
+    var fgcColor = document.querySelector('#colorChooserFG').value.slice(1,7);
+    var bgColor = document.querySelector('#colorChooserBG').value.slice(1,7);
+    var option = document.querySelector('#menu').selectedIndex;
+    var val = document.querySelectorAll("#menu option")[option].value;
+    var size = `${val}x${val}`;
+    data.innerHTML=text;
+    len.innerHTML =`Length : ${datalen}`;
+    var sizeImg = `${val}px`;
+    var url = `https://api.qrserver.com/v1/create-qr-code/?size=${size}&data=${text}&color=${fgcColor}&bgcolor=${bgColor}`;
+    console.log(val);
+    console.log(bgColor);
+    console.log(fgcColor);
+    image.src = url;
+    image.style.width = sizeImg;
+    image.style.height = sizeImg;
+});
