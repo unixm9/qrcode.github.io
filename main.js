@@ -35,6 +35,7 @@ function generate() {
     image.style.height = sizeImg;
     // at the time of generation validation will be called
     validation(text,url);
+    textField.value="";
 }
 // function to validate user input in textField
 function validation(text,url) {
