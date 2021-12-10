@@ -123,7 +123,8 @@ function displayHistory() {
     // store texts and img urls in localStorage
     else {
         qText = JSON.parse(localStorage.getItem('texts'));
-        qUrl = JSON.parse(localStorage.getItem('urls'));as
+        qUrl = JSON.parse(localStorage.getItem('urls'));
+        clearHistoryBtn.style.display ="block";
     }
     // for creating text
     // loop through each Element in qtext Array and run function on them
