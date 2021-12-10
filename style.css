@@ -2,21 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Josefin Sans,sans-serif;
+    font-family: Outfit,sans-serif;
 }
 body {
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(to right top,#b597f6,#439cfb);
+    height: auto;
+    overflow: auto;
+    background: #439cfb;
+    background: linear-gradient(to left bottom,#439cfb,#b597f6);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 .container {
     width: 85%;
-    height: 85%;
+    height: 665px;
     background: #fff;
     display: flex;
+    margin: 75px 0;
     border-radius: 10px;
     box-shadow: 0 10px 25px -10px rgb(0,0,0,0.5);
 }
@@ -68,7 +71,7 @@ body {
 }
 .leftDiv a {
     align-self: flex-start;
-    margin: 0 0 -75px 25px;
+    margin: 0 0 -175px 25px;
     width: 25%;
     display: none;
 }
@@ -77,7 +80,7 @@ body {
     outline: none;
     border: none;
     width: 100%;
-    padding: 15px 0;
+    padding: 12px 0;
     border-radius: 10px;
     color: #fff;
     font-size: 1.05rem;
@@ -170,12 +173,106 @@ span p{
 .toast {
     position: absolute;
     background-color: #30c67c;
-    bottom: 7px;
+    top: 20px;
     padding: 15px 50px;
     border-radius: 10px;
     box-shadow: 0 10px 25px -10px rgb(0,0,0,0.5);
     display: none;
 }
+.show {
+    position: absolute;
+    background-color: #30c67c;
+    top: 20px;
+    color: #fff;
+    padding: 15px 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px -10px rgb(0,0,0,0.5);
+    display: flex;
+}
 .error {
     background-color: #ff5858;
+    position: absolute;
+    top: 20px;
+    color: #fff;
+    padding: 15px 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px -10px rgb(0,0,0,0.5);
+    display: flex;
+}
+.history {
+    width: 85%;
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.heading {
+    font-size: 5rem;
+    font-family: righteous;
+    padding: 10px 25px;
+}
+.history .leftBox {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.leftBox .leftParent {
+    width: 100%;
+    background-color: #eee;
+    height: 350px;
+    margin: 25px 0;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: -10px 10px 25px -10px rgb(0,0,0,0.5);
+}
+.leftBox .leftParent .pText {
+    font-size: 1.3rem;
+    padding: 15px 25px;
+}
+.history .rightBox {
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.rightBox .rightParent {
+    width: 100%;
+    background-color: #fff;
+    height: 350px;
+    margin: 25px 0;
+    display: flex;
+    box-shadow: 10px 10px 25px -10px rgb(0,0,0,0.5);
+    border-radius:  0 10px 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+.rightBox img {
+    width: 350px;
+    height: 100%;
+    padding: 15px;
+}
+.clearHistory {
+    background-color: #ff5858;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 10px;
+    margin: 50px 0 50px 0;
+    font-size: 1.05rem;
+    transition: 0.3s;
+    cursor: pointer;   
+    display: none;
+}
+.clearHistory:hover {
+    background-color: #ff9090;
+}
+i {
+    padding: 0 20px 0 0;
 }

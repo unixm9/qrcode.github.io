@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./Images/favicon.png">
+    <link rel="shortcut icon" href="img.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>QR Code Generator</title>
 </head>
@@ -15,11 +15,11 @@
     <!-- left side container to hold qr code -->
     <div class="leftDiv">
         <div class="imgDiv">
-            <img src="Images/img.png" alt="QR Code Image" class="image">
+            <img src="img.png" alt="QR Code Image" class="image">
         </div>
         <p class="label">Data in QR Code</p>
         <p class="textEntered">Empty</p>
-        <a href="#"><button>Download</button></a>
+        <a download="#" href="#" class="download" ><button>Download</button></a>
         <p class="len">Length : 0</p>
     </div>
     <!-- right side div for controls -->
@@ -52,13 +52,29 @@
     </div>
     <!-- btn controls -->
     <div class="btnDiv">
-        <button>Generate</button>
-        <p class="bottom">©All rights reserved 2021.</p>
+        <button><i class="fa fa-cogs" aria-hidden="true"></i>Generate</button>
+        <p class="bottom">QR Code Generator</p>
     </div>
     </div>
 </div>
 <!-- notification  -->
 <p class="toast">Successfully Generated</p>
-    <script src="main.js"></script>
+
+<p class="heading">History</p><br>
+<div class="history">
+    <div class="leftBox">
+        <!-- <div class="leftParent">
+        <p class="pText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum quod dolor nostrum natus porro. Nulla quia placeat alias veritatis, ullam soluta amet reiciendis vitae quam et laborum maiores? Temporibus animi labore, quos saepe consectetur, consequuntur iusto a delectus vitae voluptate aperiam repellat quia dolorem molestias fugit, sit maxime. Asperiores iusto consequatur nobis odio accusamus illo aliquam delectus aperiam placeat. Saepe at error enim, dolorem perspiciatis, id quod recusandae quaerat eaque, totam nisi impedit</p>
+    </div> -->
+</div>
+    <div class="rightBox">
+        <!-- <div class="rightParent">
+        <img src="img.png" alt="qr code img">
+    </div> -->
+    </div>
+</div>
+<!-- clear history button to empty loccal storage -->
+<button class="clearHistory" onclick="clearHistory()"><i class="fa fa-trash-o" aria-hidden="true"></i>Clear History</button>
+<script src="main.js"></script>
 </body>
 </html>
