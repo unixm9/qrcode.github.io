@@ -155,5 +155,5 @@ function displayHistory() {
 // this will clear browser memory and reload the page to see changes in history
 function clearHistory() {
     localStorage.clear();
-    window.open("http://127.0.0.1:5500/QR%20Code/qrcode.github.io/index.html","_self");
+    window.open(window.location.href,"_self");
 }
