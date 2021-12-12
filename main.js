@@ -3,7 +3,6 @@ var btn = document.querySelector('.btnDiv button');
 var data = document.querySelector(".textEntered");
 var len = document.querySelector(".len");
 var text = document.querySelector('.inputText').value;
-var flag;
 var div = document.querySelector(".toast");
 var clearHistoryBtn = document.querySelector(".clearHistory");
 // set default background, foreground colors
