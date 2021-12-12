@@ -155,5 +155,5 @@ function displayHistory() {
 // this will clear browser memory and reload the page to see changes in history
 function clearHistory() {
     localStorage.clear();
-    window.open(window.location.href,"_self");
+    location.reload();
 }
