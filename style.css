@@ -201,6 +201,7 @@ span p{
 }
 .history {
     width: 85%;
+    color: #fff;
     height: auto;
     display: flex;
     border-radius: 10px;

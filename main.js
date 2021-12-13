@@ -28,7 +28,6 @@ function generate() {
     len.innerHTML =`Length : ${datalen}`;
     var sizeImg = `${val}px`;
     var url = `https://api.qrserver.com/v1/create-qr-code/?size=${size}&data=${text}&color=${fgcColor}&bgcolor=${bgColor}`;
-    downloadLink.download = url;
     image.src = url;
     image.style.width = sizeImg;
     image.style.height = sizeImg;
